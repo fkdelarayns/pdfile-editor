@@ -1,0 +1,6 @@
+####################################
+# Crontab file
+####################################
+
+# Run task scheduler
+* * * * * cd /var/www/html && /usr/bin/php artisan schedule:run >> /dev/null 2>&1
